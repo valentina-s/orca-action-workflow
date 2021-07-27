@@ -1,4 +1,4 @@
-name: CI
+name: Code Quality
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install --upgrade setuptools wheel
-          python -m pip install pre-commit awscli matplotlib scipy obspy
+          python -m pip install pre-commit awscli matplotlib scipy ooipy
 
       - name: Run isort hook
         run: |
